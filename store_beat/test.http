@@ -1,0 +1,33 @@
+#######
+POST http://127.0.0.1:8082/job HTTP/1.1
+content-type: application/json
+
+{
+    "name": "7",
+    "task": "store_beat.worker.test",
+    "queue": "worker",
+    "args": [100],
+    "kwargs": {},
+    "minute": "0-59"
+}
+
+
+
+#######
+POST http://127.0.0.1:8082/job HTTP/1.1
+content-type: application/json
+
+{
+    "name": "test5",
+    "jid": "1d46c42a42ea11e8901bd43a65079b6e",
+    "task": "store_beat.worker.test",
+    "queue": "worker",
+    "args": ["world"],
+    "kwargs": {},
+    "max_count": 10,
+    "interval": 5,
+    "disabled": true,
+    "unit": "seconds",
+      "expires": "2018-04-14 12:25"
+}
+

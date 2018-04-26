@@ -102,3 +102,6 @@ ENV/
 .idea/
 celeryconfig.py
 storebeatconfig.py
+celerybeat.pid
+front/
+
